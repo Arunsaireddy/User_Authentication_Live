@@ -18,10 +18,7 @@ const uri = process.env.MONGO_URI
 
 //const uri = "mongodb+srv://arunsaireddy:i9P8Q268GcMzRiMe@cluster.cfee7zy.mongodb.net/G2_DriveTest?retryWrites=true&w=majority";
 
-app.listen(PORT,()=>{   
 
-    console.log(`Server is listening at port ${PORT} !!!!!!!!!!`)
-})
 
 
 const session_store = MongoStore.create({
@@ -31,6 +28,11 @@ const session_store = MongoStore.create({
 })
 
 const app = express()
+
+app.listen(PORT,()=>{   
+
+    console.log(`Server is listening at port ${PORT} !!!!!!!!!!`)
+})
 
 app.use(express.urlencoded({extended:true}))
 
