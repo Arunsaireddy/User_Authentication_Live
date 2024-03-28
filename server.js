@@ -29,10 +29,7 @@ const session_store = MongoStore.create({
 
 const app = express()
 
-app.listen(PORT,()=>{   
 
-    console.log(`Server is listening at port ${PORT} !!!!!!!!!!`)
-})
 
 app.use(express.urlencoded({extended:true}))
 
@@ -56,6 +53,12 @@ app.set('view-engine','ejs')
 app.use(express.static('public'))
 
 const PORT = process.env.PORT || 8080
+
+
+app.listen(PORT,()=>{   
+
+    console.log(`Server is listening at port ${PORT} !!!!!!!!!!`)
+})
 
 
 
