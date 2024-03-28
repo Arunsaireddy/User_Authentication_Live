@@ -1,0 +1,40 @@
+<%-    include('./partials/header.ejs')                    %>
+<body>
+    <%- include ('./partials/nav.ejs')%>
+    <form id="userForm" action="/edit/<%=driver.licenseNo  %>" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" value="<%=driver.firstName  %>" readonly >
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" value="<%=driver.lastName  %>" readonly>
+            <br>
+            <label for="licenseNumber">License Number:</label>
+            <input type="text" id="licenseNo" name="licenseNo" value="<%=driver.licenseNo  %>" readonly>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="99"  value="<%=driver.age  %>"readonly>
+            
+        </fieldset>
+        <h2> Edit the Below Information </h2>
+        <fieldset>
+            <legend>Car Information</legend>
+            <label for="make">Make:</label>
+            <input type="text" id="make" name="make" value="<%=driver.car_details.make %>" required>
+            <br>
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" value="<%=driver.car_details.model %>" required>
+            <br>
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" min="1900" max="2022" value="<%=driver.car_details.year %>"required>
+            <br>
+            <label for="plate Number">Plate Number:</label>
+            <input type="text" id="platno" name="platno" value="<%=driver.car_details.platno %>"required>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="/js/G2_Test.js"></script>
+    <%-  include('./partials/footer.ejs')  %> 
+</body>
+</html>

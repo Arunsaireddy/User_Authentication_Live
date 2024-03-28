@@ -1,0 +1,20 @@
+<%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <h1>Username : <%= currentUser.username  %></h1>
+    <h1>First Name : <%= currentUser.firstName  %></h1>
+    <h1>Last Name : <%= currentUser.lastName  %></h1>
+    <h1>Age : <%= currentUser.age  %></h1>
+    <h1>User Type : <%= currentUser.userType  %></h1>
+    <h1>Car Details:</h1>
+    <h1>Make : <%= currentUser.car_details.make  %></h1>
+    <h1>Model : <%= currentUser.car_details.model  %></h1>
+    <h1>Year : <%= currentUser.car_details.year  %></h1>
+    <h1>PlatNo : <%= currentUser.car_details.platno  %></h1>
+
+
+   
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>

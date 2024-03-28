@@ -1,0 +1,161 @@
+#userForm {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f4f4f4;
+  margin-top: 30px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-size: 22px;
+  color: black;
+  font: bold;
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+}
+
+#licenseNumber {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+#submitBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#licenseCard {
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+body {
+  background-color: rgb(223, 210, 193);
+}
+
+#context {
+  margin-top: 80px;
+  text-align: center;
+}
+
+#dbd {
+  text-align: center;
+  margin-top: 250px;
+}
+
+a {
+  font-size: 24px;
+  color: #0a0b0a;
+}
+h2 {
+  text-align: center;
+}
+.flexClass {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+
+/*Login and SignuP css */
+
+
+#card {
+  background-color: #fff;
+  padding: 20px;
+  width: 500px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 100px; 
+  margin-left: 500px; 
+}
+
+#card1 {
+  background-color: #fff;
+  padding: 20px;
+  width: 500px;
+  height: 420px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 100px; 
+  margin-left: 500px; 
+}
+
+#txt{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#signupForm, #loginForm {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center; /* Center the button horizontally */
+}
+
+#username,
+#password,
+#repeatPassword,
+#userType {
+  display: block;
+  margin-bottom: 12px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#signupButton, #loginButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+#signupButton:hover {
+  background-color: #45a049;
+}
